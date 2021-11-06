@@ -49,6 +49,10 @@ li {
     border-bottom: .1875rem solid #27D381;
 }
 
+.inactive {
+    color: #D7DEE4;
+}
+
 #howto {
     margin-top: 2rem;
     height: 7.875rem;
@@ -229,7 +233,12 @@ button {
 }
 
 .actions {
-    width: 50%
+    width: 50%;
+    margin-left: 1.875rem;
+}
+
+.actions p {
+    margin-top: 1.5625rem;
 }
 
 .impact {
@@ -301,8 +310,7 @@ tbody tr {
 .change-arrow {
     margin-right: .625rem;
 }
-/* .test {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-} */
+
+.credit-table {
+    margin-top: 2.5rem;
+}
