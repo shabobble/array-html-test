@@ -50,7 +50,7 @@ li {
 }
 
 .inactive {
-    color: #D7DEE4;
+    color: #A7ABAF;
 }
 
 #howto {
@@ -191,6 +191,15 @@ button {
 #credit-scores h2 {
     color: #07025b;
 }
+
+.equifax-score {
+    padding-right: 2.5rem;
+    padding-left: 2rem;
+}
+
+.experian-score {
+    padding-right: 2.5rem;
+}
 .bureaus {
     display: flex;
     justify-content: space-between;
@@ -233,16 +242,22 @@ button {
 }
 
 .actions {
-    width: 50%;
+    width: 56.5%;
     margin-left: 1.875rem;
 }
 
 .actions p {
     margin-top: 1.5625rem;
+    width: 33.125rem;
 }
 
 .impact {
-    width: 50%;
+    width: 43.5%;
+}
+
+.impact h2 {
+    padding-left: 3rem;
+    margin-bottom: .9375rem;
 }
 
 .actions h2 {
@@ -271,23 +286,23 @@ table {
 }
 
 thead th:nth-child(1) {
-    width: 32%
+    width: 29%
 }
 
 thead th:nth-child(2) {
-    width: 32%
+    width: 29%
 }
 
 thead th:nth-child(3) {
-    width: 12%
+    width: 14%
 }
 
 thead th:nth-child(4) {
-    width: 12%
+    width: 14%
 }
 
 thead th:nth-child(5) {
-    width: 12%
+    width: 14%
 }
 
 tbody tr {
