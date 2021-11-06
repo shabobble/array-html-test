@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="array-score-sight.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Heebo">
+    <title>ScoreSight</title>
+</head>
+
+<body>
+    <h1>ScoreSight</h1>
+    <h2>Understand your score potential and the actions needed to get there.</h2>
+
+    <ul>
+        <li class="active">Target Score</li>
+        <li>Debt Payment</li>
+    </ul>
+
+    <div id="howto">
+        <h3>How to use</h3>
+        <p class="reg-font">First, select a target credit score. See what actions are available to reach this potential
+            new score.</p>
+    </div>
+    <div id="credit-report">
+        <div id="target-score">
+            <h2>Target Score</h2>
+            <div id="input-button">
+                <input type="text" value="670">
+                <button>Set Target</button>
+            </div>
+            <div class="score-bar">
+                <div class="bad"></div>
+                <div class="fair"></div>
+                <div class="good"></div>
+            </div>
+            <div class="marker"></div>
+            <div class="score-bar-stubs">
+                <div class="stub stub-1">300</div>
+                <div class="stub stub-2">560</div>
+                <div class="stub stub-3"></div>
+                <div class="stub stub-4">750</div>
+                <div class="stub stub-5">850</div>
+            </div>
+        </div>
+        <div id="credit-scores">
+            <h2>Credit Scores</h2>
+            <div class="bureaus">
+                <div class="transunion"><img src="transunion.svg" alt="Transunion Logo"></div>
+                <div class="equifax"><img src="Equifax@3x.svg" alt="Equifax Logo"></div>
+                <div class="experian"><img src="experian_logo@3x.svg" alt="Experian Logo"></div>
+            </div>
+            <div class="scores">
+                <div class="transunion-score">659</div>
+                <div class="equifax-score">660</div>
+                <div class="experian-score">659</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="recommendations">
+        <div class="test">
+            <div class="actions-impact">
+                <div class="actions">
+                    <h2>Recommended Actions</h2>
+                    <p class="reg-font">These recommendations are only estimates. They do not take into consideration
+                        future factors like
+                        balance changes and late payments.</p>
+                </div>
+                <div class="impact">
+                    <h2>Potential Impact</h2>
+                    <div class="score-changes">
+                        <div class="score-change-1">679</div>
+                        <div class="score-change-2">678</div>
+                        <div class="score-change-3">678</div>
+                    </div>
+                </div>
+            </div>
+            <div class="credit-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Action</th>
+                            <th>Account</th>
+                            <th>TransUnion</th>
+                            <th>Equifax</th>
+                            <th>Experian</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="action-tr">
+                                    <span><img src="alerts-icon.svg"></span>Make an On-time Payment
+                                </div>
+                            </td>
+                            <td class="bold-font">BK OF AMER #456 9356 ****</td>
+                            <td><span class="change-arrow"><img src="Triangle Copy 8.svg"></span>3 pts</td>
+                            <td><span class="change-arrow"><img src="Triangle Copy 8.svg"></span>2 pts</td>
+                            <td><span class="change-arrow"><img src="Triangle Copy 8.svg"></span>3 pts</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="action-tr"><span><img src="alerts-icon.svg"></span>Make an On-time Payment
+                                </div>
+                            </td>
+                            <td class="bold-font">JPMCB CARD #736 4625 ****</td>
+                            <td><span class="change-arrow"><img src="Triangle Copy 8.svg"></span>3 pts</td>
+                            <td><span class="change-arrow"><img src="Triangle Copy 8.svg"></span>3 pts</td>
+                            <td><span class="change-arrow"><img src="Triangle Copy 8.svg"></span>2 pts</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="action-tr"><span><img src="simulator-icon.svg"></span>Increase credit limit
+                                </div>
+                            </td>
+                            <td class="bold-font">BK OF AMER #456 9356 ****</td>
+                            <td><span class="change-arrow"><img src="Triangle Copy 8.svg"></span>3 pts</td>
+                            <td><span class="change-arrow"><img src="Triangle Copy 8.svg"></span>3 pts</td>
+                            <td><span class="change-arrow"><img src="Triangle Copy 8.svg"></span>3 pts</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="action-tr"><span><img src="Group 7114.svg"></span>Pay down debt</div>
+                            </td>
+                            <td class="bold-font">BK OF AMER #456 9356 ****</td>
+                            <td><span class="change-arrow"><img src="Triangle Copy 8.svg"></span>2 pts</td>
+                            <td><span class="change-arrow"><img src="Triangle Copy 8.svg"></span>2 pts</td>
+                            <td><span class="change-arrow"><img src="Triangle Copy 8.svg"></span>2 pts</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <p class="reg-font"><span class="bold-font">Important:</span> Based on taking these actions, the best day to check
+        for score
+        increases is the 28th of the month.
+        Allow up to three months to achieve full results. These recommendations are only estimates. They do not take
+        into consideration future factors like balance changes and late payments.</p>
+    <br>
+    <p class="bold-font">Vantage Scorre 3.0</p>
+</body>
+
+</html>

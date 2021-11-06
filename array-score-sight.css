@@ -1,0 +1,308 @@
+html {
+    font-size: 16px;
+    font-family: Heebo;
+    font-weight: 500;
+}
+
+.reg-font {
+    font-weight: 400
+}
+
+.bold-font {
+    font-weight: 600
+}
+
+body {
+    width: 71.6875rem;
+    height: 77.75rem;
+    margin-left: 10.25rem;
+}
+h1 {
+    margin-top: 3rem;
+    color: #1665D8;
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.25rem;
+    margin-top: 0;
+    color: #3E3F42;
+}
+
+ul {
+    list-style-type: none;
+    border-bottom: .1875rem solid #D7DEE4;
+    padding-left: 0;
+    padding-bottom: .5rem;
+    margin-right: 10.5rem;
+    margin-top: 2.9375rem;
+}
+
+li {
+    display: inline;
+    margin-right: 2.5625rem;
+    font-size: 1rem;
+    padding-bottom: .5rem;
+}
+
+.active {
+    border-bottom: .1875rem solid #27D381;
+}
+
+#howto {
+    margin-top: 2rem;
+    height: 7.875rem;
+    width: 33.75rem;
+    background-color: #F9FAFB;
+    border-radius: .5rem;
+    padding-left: 1.8125rem;
+}
+
+#howto h3 {
+    padding-top: 1.6125rem;
+
+}
+#howto p {
+    padding-bottom: 1.5625rem;
+    padding-right: 3.3125rem;
+}
+
+#credit-report {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.5rem;
+}
+#target-score {
+    width: 33.6875rem;
+}
+
+#target-score h2 {
+    margin-left: 0;
+    color: #07025b;
+}
+
+input {
+    width: 20.6875rem;
+    height: 3.125rem;
+    border-radius: .25rem;
+    border: .0625rem solid #D7DEE4;
+    font-size: 1.5rem;
+    padding-left: .875rem;
+}
+
+button {
+    width: 11.875rem;
+    height: 3.125rem;
+    background-color: #27D381;
+    border-radius: .3125rem;
+    border-width: 0;
+    color: #FFF;
+    font-family: Heebo;
+    font-size: 1rem;
+    /* margin-left: 1.125rem; */
+}
+
+.score-bar {
+    width: 100%;
+    height: .875rem;
+    display: inline-flex; 
+    margin-top: 1.75rem;
+}
+
+.bad {
+    background-color: #F53758;
+    width: 37.1%;
+    height: 100%;
+    border-radius: 3px 0 0 3px;
+}
+
+.fair {
+
+    width: 35.3%;
+    height: 100%;
+    background-color: #F1C531;
+}
+
+.good {
+    background-color: #27D381;
+    width: 27.6%;
+    height: 100%;
+    border-radius: 0 3px 3px 0;
+}
+
+.marker {
+    position: absolute;
+    border-radius: 50%;
+    border: 4px solid #FFF;
+    background-color: #F1C531;
+    top: 542px;
+    left: 500px;
+    width: 22px;
+    height: 22px;
+    box-shadow: 0 1px 4px 0
+}
+
+#input-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2.1875rem;
+}
+
+.score-bar-stubs {
+    display: flex;
+    justify-content: space-between;
+    margin-top: .3125rem;
+}
+
+.stub {
+    flex: 0 0 25px;
+    text-align: right;
+}
+
+.stub.stub-1 {
+    text-align: left;
+    flex: 0 0 22%;
+}
+
+.stub.stub-5 {
+    flex: 0 0 12%;
+}
+
+.equifax img {
+    width: 5.3125rem;
+    height: 1.4375rem;
+}
+
+.experian img {
+    width: 5.3125rem;
+    height: 1.4375rem;
+}
+
+#credit-scores {
+
+    width: 26.375rem;
+}
+
+#credit-scores h2 {
+    color: #07025b;
+}
+.bureaus {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.bureaus div {
+    border-bottom: 1px solid #EBEBEB;
+    width: 7.5rem;
+    padding-bottom: 1.5625rem;
+}
+
+.scores {
+    display: flex;
+    justify-content: space-between;
+    margin-top: .9375rem;
+}
+
+.scores div {
+    font-size: 2.75rem;
+    font-weight: 650;
+}
+
+.recommendations {
+    border: 1px solid #D7DEE4;
+    border-radius: 6px;
+    width: 100%;
+    height: 33.25rem;
+    margin-right: 2.0625rem;
+    margin-top: 2.375rem;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between
+}
+
+.actions-impact {
+    margin-top: 2.125rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.actions {
+    width: 50%
+}
+
+.impact {
+    width: 50%;
+}
+
+.actions h2 {
+    color: #07025b;
+}
+
+.impact h2 {
+    color:#07025b
+}
+
+.score-changes {
+    display: flex;
+    justify-content: space-around;
+}
+
+.score-changes div {
+    color: #07025b;
+    font-weight: 650;
+    font-size: 2.75rem;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead th:nth-child(1) {
+    width: 32%
+}
+
+thead th:nth-child(2) {
+    width: 32%
+}
+
+thead th:nth-child(3) {
+    width: 12%
+}
+
+thead th:nth-child(4) {
+    width: 12%
+}
+
+thead th:nth-child(5) {
+    width: 12%
+}
+
+tbody tr {
+    background-color: #F5FAFF;
+    height: 4.875rem;
+}
+
+.action-tr {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    color: #1665D8;
+}
+
+.action-tr span {
+    margin-right: .82125rem;
+    margin-left: 1.875rem;
+}
+
+.change-arrow {
+    margin-right: .625rem;
+}
+/* .test {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+} */
