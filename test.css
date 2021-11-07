@@ -290,7 +290,6 @@ table {
 
 th {
     text-align: left;
-    padding-bottom: 1rem;
 }
 
 th:nth-child(n+3) {
