@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -9,12 +10,6 @@ body {
     font-weight: 500;
 }
 
-.container {
-  max-width:1080px;
-  margin:0 auto;
-  padding:0 20px;
-  position:relative;
-}
 
 .reg-font {
     font-weight: 400
@@ -36,8 +31,17 @@ h2 {
     color: #3E3F42;
 }
 
+.container {
+  max-width:1080px;
+  margin:0 auto;
+  padding:0 20px;
+  position:relative;
+}
+
 ul {
     list-style-type: none;
+}
+#nav-bar {
     border-bottom: .1875rem solid #D7DEE4;
     padding-left: 0;
     padding-bottom: .5rem;
@@ -45,7 +49,7 @@ ul {
     margin-top: 2.9375rem;
 }
 
-li {
+#nav-bar li {
     display: inline;
     margin-right: 2.5625rem;
     font-size: 1rem;
@@ -80,9 +84,11 @@ li {
 
 #credit-report {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     margin-top: 2.5rem;
 }
+
 #target-score {
     width: 33.6875rem;
 }
@@ -92,8 +98,14 @@ li {
     color: #07025b;
 }
 
-input {
-    width: 20.6875rem;
+.input-button-bar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.score-input {
+    width: calc(100% - 11.875rem - 1.125rem);
     height: 3.125rem;
     border-radius: .25rem;
     border: .0625rem solid #D7DEE4;
@@ -110,6 +122,10 @@ button {
     color: #FFF;
     font-size: 1rem;
     margin-left: 1.125rem;
+}
+
+.bar-marker-stubs {
+    width: 100%;
 }
 
 .score-bar {
@@ -145,18 +161,11 @@ button {
     border-radius: 50%;
     border: 4px solid #FFF;
     background-color: #F1C531;
-    top: 490px;
+    top: 460px;
     left: 350px;
     width: 22px;
     height: 22px;
     box-shadow: 0 1px 4px 0
-}
-
-#input-button {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 2.1875rem;
 }
 
 .score-bar-stubs {
@@ -179,16 +188,6 @@ button {
     flex: 0 0 12%;
 }
 
-.equifax img {
-    width: 5.3125rem;
-    height: 1.4375rem;
-}
-
-.experian img {
-    width: 5.3125rem;
-    height: 1.4375rem;
-}
-
 #credit-scores {
     padding-right: 2rem;
     width: 26.375rem;
@@ -198,14 +197,6 @@ button {
     color: #07025b;
 }
 
-.equifax-score {
-    padding-right: 2.5rem;
-    padding-left: 2rem;
-}
-
-.experian-score {
-    padding-right: 2.5rem;
-}
 .bureaus {
     display: flex;
     justify-content: space-between;
@@ -218,6 +209,16 @@ button {
     padding-bottom: 1.5625rem;
 }
 
+.equifax img {
+    width: 5.3125rem;
+    height: 1.4375rem;
+}
+
+.experian img {
+    width: 5.3125rem;
+    height: 1.4375rem;
+}
+
 .scores {
     display: flex;
     justify-content: space-between;
@@ -227,6 +228,15 @@ button {
 .scores div {
     font-size: 2.75rem;
     font-weight: 650;
+}
+
+.equifax-score {
+    padding-right: 2.5rem;
+    padding-left: 2rem;
+}
+
+.experian-score {
+    padding-right: 2.5rem;
 }
 
 .recommendations {
@@ -252,6 +262,10 @@ button {
     margin-left: 1.875rem;
 }
 
+.actions h2 {
+    color: #07025b;
+}
+
 .actions p {
     margin-top: 1.5625rem;
     width: 33.125rem;
@@ -266,11 +280,6 @@ button {
     margin-bottom: .9375rem;
 }
 
-.actions h2 {
-    color: #07025b;
-}
-
-
 .score-changes {
     display: flex;
     justify-content: space-around;
@@ -281,50 +290,37 @@ button {
     font-weight: 650;
     font-size: 2.75rem;
 }
-
-table {
-    table-layout: fixed;
-    width: 100%;
-    border-collapse: collapse;
+.score-change-1, .score-change-2, .score-change-3 {
+    display: flex;
+    flex-direction: row;
 }
 
-th {
-    text-align: left;
-    padding-bottom: 1rem;
+.credit-table {
+    margin-top: 2.5rem;
 }
 
-th:nth-child(n+3) {
-    color: #07025b
-}
-
-th:nth-child(-n+2) {
+.table-headers {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-size: 1rem;
     color: #6B6C6F;
 }
 
-thead th:nth-child(1) {
-    width: 29%;
-    padding-left: 1.875rem;
+.table-headers h6 {
+    color: #07025b;
+    font-size: 1rem;
 }
 
-thead th:nth-child(2) {
-    width: 29%
+.table-rows {
+    border: 1px solid #85A2CF;
 }
-
-thead th:nth-child(3) {
-    width: 14%
-}
-
-thead th:nth-child(4) {
-    width: 14%
-}
-
-thead th:nth-child(5) {
-    width: 14%
-}
-
-tbody tr {
+.table-row {
+    display: flex;
+    align-items: center;
     background-color: #F5FAFF;
-    height: 4.875rem;
+    border-bottom: 1px solid #85A2CF;
+    padding: 1.45rem 0;
 }
 
 .action-tr {
@@ -334,21 +330,30 @@ tbody tr {
     color: #1665D8;
 }
 
+.action-tr-align {
+    width: 32%;
+    padding-left: 1.875rem;
+}
+
 .action-tr span {
     margin-right: .82125rem;
-    margin-left: 1.875rem;
+}
+
+.account-tr-align {
+    width: 30%;
+}
+
+.score-tr-align {
+    display: flex;
+    width: 38%;
+}
+
+.score-tr-align .score-data-align {
+    width: 33.33%;
 }
 
 .change-arrow {
     margin-right: .625rem;
-}
-
-.credit-table {
-    margin-top: 2.5rem;
-}
-
-sub {
-    font-size: 14;
 }
 
 .score-changes div sup {
@@ -360,8 +365,210 @@ sub {
     flex-direction: column;
     padding-top: 1rem;
     padding-right: 3rem;
+    padding-left: .5rem;
 }
 
-.table-bureau-header th {
-    padding-right: 200
+#important {
+    margin-top: 2.3125rem;
 }
+
+#disclaimer {
+    margin-left: 2rem;
+}
+
+@media screen and (min-width: 641px) {
+    .d-hidden {
+        display: none;
+    }
+}
+@media screen and (max-width: 640px) {
+    .container {
+        max-width: 375px;
+        margin-left: 1.25rem;
+    }
+
+    h1 {
+        font-size: 1.375rem;
+    }
+    h1+h2 {
+        width: 20.9375rem;
+        font-size: .875rem;
+    }
+
+    #nav-bar {
+        width: 20.9375rem;
+        margin-right: 1.125rem;
+        margin-top: 2.5rem;
+    }
+
+    #howto {
+        width: 21.25rem;
+        font-size: .875rem;
+    }
+
+    #howto h3 {
+        font-size: 1rem;
+    }
+
+    #credit-report {
+        flex-direction: column-reverse;
+    }
+
+    #target-score {
+        margin-top: 2.4375rem;
+        width: 100%;
+    }
+
+    .score-input {
+        order: 0;
+        width: 100%;
+    }
+
+    button {
+        order: 2;
+        width: 100%;
+        margin: 0;
+    }
+
+    .bar-marker-stubs {
+        order: 1;
+        padding-bottom: 2rem;
+    }
+    .marker {
+        top: 695px;
+        border-radius: 6px;
+        width: .9375rem;
+        height: 1.375rem;
+        left: 210px;
+    }
+
+    #credit-scores {
+        margin-top: 1.875rem;
+    }
+
+    .bureaus {
+        margin-top: 1rem;
+    }
+
+    .scores {
+        margin-top: .5625rem;
+    }
+
+    .recommendations {
+        height: auto;
+        border: none;
+    }
+
+    .actions-impact {
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+    }
+
+    .actions {
+        width: 100%;
+        margin: 0;
+    }
+
+    .actions h2 {
+        font-size: 18px;
+    }
+
+    .actions p {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .impact {
+        width: 100%;
+        flex-direction: column;
+        margin-bottom: 2.1875rem;
+    }
+
+    .impact h2 {
+        font-size: 1.125rem;
+    }
+
+    .score-changes {
+        border: 1px solid #D7DEE4;
+        border-radius: 6px;
+        display: flex; 
+        padding-left: 1.5rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        width: auto;
+    }
+    
+    .score-changes div {
+        font-size: 2.25rem;
+    }
+
+    .score-changes div sup {
+        font-size: 12px;
+    }
+
+    .score-changes .d-hidden {
+        font-size: 14px;
+    }
+
+    .credit-change-wrapper {
+        padding-right: 1.5rem;
+    }
+
+    .credit-change-wrapper img {
+        width: 12px;
+        height: 9px;
+    }
+
+    .table-headers {
+        display: none;
+    }
+
+    .table-rows {
+        border: none;
+    }
+
+    .table-row {
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: transparent;
+        padding: 0;
+        margin-bottom: 1rem;
+        border: 1px solid #D7DEE4;
+        border-radius: 6px;
+    }
+
+    .action-tr-align, .account-tr-align, .score-tr-align {
+        width: 100%
+    }
+
+    .action-tr {
+        background: #F5FAFF;
+        border-bottom: 1px solid #D7DEE4;
+    }
+    
+    .action-tr, .score-tr {
+        padding: 1rem 1.5rem;
+    }
+
+    .account-tr {
+        padding: 1.7rem 1.5rem;
+    }
+
+    .score-data-align h6 {
+        font-size: 14px;
+        font-weight: 400;
+        padding-bottom: .5rem;
+    }
+
+    #important {
+        margin-top: 2.125rem;
+        
+    }
+
+    #disclaimer {
+        margin-left: 0;
+        font-size: 14px;
+    }
+}
+
+
